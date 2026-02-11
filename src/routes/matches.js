@@ -13,7 +13,7 @@ matchRouter.get('/', async (req, res) => {
     const parsed = listMatchesQuerySchema.safeParse(req.query);
 
     if (!parsed.success) {
-        res.status(400).json({error: "Invalid Payload", details: JSON.stringify(parsed.error)});
+        res.status(400).json({error: "Invalid Payload", details: parsed.error.issues});
     }
 
     const limit = Math.min(parsed.data.limit ?? 50, MAX_LIMIT);
@@ -29,10 +29,11 @@ matchRouter.get('/', async (req, res) => {
 
 matchRouter.post('/', async (req, res) => {
     const parsed = createMatchSchema.safeParse(req.body);
-    const { data : {startTime, endTime, homeScore, awayScore }} = parsed;
     if (!parsed.success) {
-        res.status(400).json({error: "Invalid Payload", details: JSON.stringify(parsed.error)});
+        res.status(400).json({error: "Invalid Payload", details: parsed.error.issues});
     }
+
+    const { data : {startTime, endTime, homeScore, awayScore }} = parsed;
 
     try {
         const [ event ] = await db.insert(matches).values({
