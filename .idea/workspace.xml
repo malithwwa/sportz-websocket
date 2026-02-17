@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a7ee26-8004-4865-aa60-dc7e74913448" name="Changes" comment="implement coderabbit-suggested fixes">
+    <list default="true" id="c3a7ee26-8004-4865-aa60-dc7e74913448" name="Changes" comment="implement the websocket server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/matches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/matches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ws/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ws/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,7 @@
       <workItem from="1770777397807" duration="4966000" />
       <workItem from="1770861275076" duration="4992000" />
       <workItem from="1770951901263" duration="1809000" />
-      <workItem from="1771296071611" duration="4674000" />
+      <workItem from="1771296071611" duration="6503000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -124,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770795383981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement the websocket server">
+      <option name="closed" value="true" />
+      <created>1771305062652</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771305062652</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +139,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="implement database schemas" />
     <MESSAGE value="implement matches POST &amp; GET" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement matches POST &amp; GET" />
+    <MESSAGE value="implement the websocket server" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement the websocket server" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
